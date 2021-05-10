@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(C:/Users/PC/Downloads/liderazgo.svg);
+}
+
+h1 {
+    text-align: center;
+    color: orange;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200 px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+.contenedor > div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .contenido {
+    grid-column: span 2;
+    background-color: bisque;
+}
+
+.contenedor .sidebar {
+    background-color: beige;
+    grid-row: span 1;
+}
+
+.contenedor .footer {
+    background-color: burlywood;
+    border-radius: 4px;
+}
+
+.contenedor .Widget-1 {
+    background-color: blanchedalmond;
+}
+
+.contenedor .Widget-2 {
+    background-color: peru;
+}
+
+@media screen and (max-width:768px){
+    body {
+        background-color: rgb(212, 207, 202);
+    }
+
+    .contenedor .contenido {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .sidebar {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .widget-1 {
+        grid-column: span 2;
+    }
+}
