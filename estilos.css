@@ -1,15 +1,43 @@
+.barra {
+    background-color: rgb(78, 63, 94);
+}
+
+.barra ul {
+    list-style: none;
+}
+
+.barra ul li {
+    display: inline-block;
+}
+
+.barra ul li a{
+    text-decoration: none;
+    display: block;
+    color:whitesmoke;
+    padding: 20px;
+}
+
+.barra ul li a:hover {
+    background-color: royalblue;
+}
+
+.barra ul li a:hover h1 {
+    text-decoration:aliceblue;
+}
+
+h1 {color:violet;text-align: center;}
+
+body {
+    background-color: thistle;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: url(C:/Users/PC/Downloads/liderazgo.svg);
-}
-
-h1 {
-    text-align: center;
-    color: orange;
+    background-color: skyblue;
 }
 
 .contenedor {
@@ -23,37 +51,33 @@ h1 {
 }
 
 .contenedor > div {
-    background-color: white;
+    background-color: rgb(165, 90, 136);
     padding: 20px;
     border-radius: 4px;
 }
 
+.contenedor .header {
+    background-color: rgb(170, 33, 97);
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+
 .contenedor .contenido {
     grid-column: span 2;
-    background-color: bisque;
+    background-color: rgb(156, 58, 58);
 }
 
 .contenedor .sidebar {
-    background-color: beige;
-    grid-row: span 1;
+    background-color: aquamarine;
+    grid-row: span 2;
+    text-align: center;
 }
 
-.contenedor .footer {
-    background-color: burlywood;
-    border-radius: 4px;
-}
-
-.contenedor .Widget-1 {
-    background-color: blanchedalmond;
-}
-
-.contenedor .Widget-2 {
-    background-color: peru;
-}
-
-@media screen and (max-width:768px){
+@media screen and (max-width:720px){
     body {
-        background-color: rgb(212, 207, 202);
+        background-color: floralwhite;
     }
 
     .contenedor .contenido {
@@ -67,4 +91,11 @@ h1 {
     .contenedor .widget-1 {
         grid-column: span 2;
     }
+}
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+p {
+    font-family: 'Akaya Telivigala', cursive;
 }
